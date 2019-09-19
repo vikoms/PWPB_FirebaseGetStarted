@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrackActivity">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewArtistName"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:text="Artist Name"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:layout_below="@+id/textViewArtistName"
+        android:id="@+id/editTextTrackName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="AddTrack Name"
+        android:inputType="textPersonName" />
+
+   <SeekBar
+       android:layout_below="@id/editTextTrackName"
+       android:id="@+id/seekBarRating"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:max="5"/>
+
+    <Button
+        android:layout_below="@+id/seekBarRating"
+        android:id="@+id/btnAddTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Track"/>
+
+    <TextView
+        android:id="@+id/textViewTrack"
+        android:layout_below="@id/btnAddTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <ListView
+        android:id="@+id/container_listView_track"
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_below="@+id/textViewTrack"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
